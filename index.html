@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-600">
+  
+
+    <div class="mainbox">
+        <header class="width-full headerImage bg-center bg-cover">
+            <h1 class="smythe text-5xl ml-16 pt-8">Jimmy's Diner</h1>
+            <h2 class="smythe text-3xl ml-16">The best burgers and pizzas in town.</h2>
+        </header>
+
+        <div class="renderMenu" id="renderMenu"></div>
+        <div class="renderOrder smytheDark text-4xl text-center flex-col hidden" id="renderOrder">
+            <p>Your Order</p>
+        </div>
+        <div class="renderTotal smytheDark text-4xl text-start hidden m-4 p-4" id="renderTotal">
+            <p>Total Price:</p>
+        </div>
+        <button id="orderBtn" class="hidden w-full h-24 text-white text-4xl bg-green-500 align-content p-6">Complete Order</button>
+    </div>
+
+    <div id="modalBox" class="hidden modalBox flex-col bg-white">
+        <form id="consent-form">
+        <input class="w-full h-16 bg-gray-100 text-black text-2xl p-4" type="text" name="fullName" placeholder="Enter your full name" required/>
+        <input class="w-full h-16 bg-gray-100 text-black text-2xl p-4" type="text" name="cardNumber" placeholder="Enter your credit card number" required/>
+        <input class="w-full h-16 bg-gray-100 text-black text-2xl p-4 " type="text" name="securityCode" placeholder="Enter your CVV" required/>
+
+
+        <div>
+            <button id="modal-pay-btn" type="submit" class="w-full h-24 text-white text-4xl bg-green-400 text-center align-content p-6">Pay</button>
+        </div>
+        </form>
+
+    </div>
+
+    <script src="index.js" type="module"></script>    
+</body>
+</html>
