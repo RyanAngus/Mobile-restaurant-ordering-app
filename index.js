@@ -118,7 +118,7 @@ function deleteOrder(foodId) {
 
 
 function finalMessage() {
-    renderTotal.innerHTML += `<h1 class="w-full h-32 bg-green-300 text-black text-4xl ml-4 p-4 text-center">Thanks for ordering!</h1>`
+    renderTotal.innerHTML += `<h1 class="flex-row justify-content align-content w-96 h-32 bg-green-300 text-black text-4xl ml-4 p-4 text-center">Thanks for ordering!</h1>`
 }
     
 
